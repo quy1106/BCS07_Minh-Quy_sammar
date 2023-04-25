@@ -21,6 +21,12 @@
   <!-- carousel -->
   <link rel="stylesheet" href="./css/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl-carousel/owl.theme.default.min.css">
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- popup: Fancyapp -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
   <!-- main css -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -85,13 +91,14 @@
       <div class="banner__content">
         <div class="banner__left">
           <div class="title">
-            <p>We are The Best</p>
-            <h2>Freelance Product Designer Running</h2>
+            <p class="animate__animated animate__fadeInUp">We are The Best</p>
+            <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Freelance Product Designer Running</h2>
           </div>
           <div class="banner__text">
-            <p>We develop the relationships that underpin the next phase in your <br>
+            <p class="animate__animated animate__fadeInUp animate__delay-2s">We develop the relationships that underpin
+              the next phase in your <br>
               organisation’s growth.</p>
-            <ul>
+            <ul class="animate__animated animate__fadeInUp animate__delay-3s">
               <li>
                 <i class="las la-check"></i>
                 Master's degree in designing
@@ -101,11 +108,11 @@
                 Outstanding mobile design
               </li>
             </ul>
-            <button>GET STARTED</button>
+            <button class="animate__animated animate__fadeInUp animate__delay-4s">GET STARTED</button>
           </div>
         </div>
         <div class="banner__right">
-          <div class="banner__img">
+          <div class="banner__img animate__animated animate__fadeInUp animate__delay-3s">
             <img src="./img/pic3_1.png" alt="bg3_1">
           </div>
         </div>
@@ -140,10 +147,12 @@
   <section class="aboutus">
     <div class="container">
       <div class="aboutus__content">
-        <div class="aboutus__left">
+        <div class="aboutus__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+          data-wow-delay=".2s">
           <img src="./img/pic1.jpg" alt="">
         </div>
-        <div class="aboutus__right">
+        <div class="aboutus__right wow animate__animated animate__fadeInRight" data-wow-duration="2s"
+          data-wow-delay=".2s">
           <div class="title">
             <p>About Us</p>
             <h2>Build Your <br>
@@ -181,22 +190,22 @@
       <div class="number__content">
         <div class="number__item">
           <i class="flaticon-smile"></i>
-          <h3>18 MI</h3>
+          <h3><span class="counter">18</span> MI</h3>
           <p>Satisfied Clients</p>
         </div>
         <div class="number__item">
           <i class="flaticon-line-chart"></i>
-          <h3>20 MI</h3>
+          <h3><span class="counter">20</span> MI</h3>
           <p>Project Completed </p>
         </div>
         <div class="number__item">
           <i class="flaticon-startup"></i>
-          <h3>30 MI</h3>
+          <h3><span class="counter">30</span> MI</h3>
           <p>Project Lunched </p>
         </div>
         <div class="number__item">
           <i class="flaticon-confetti"></i>
-          <h3>50</h3>
+          <h3 class="counter"> 50</h3>
           <p>Years Completed </p>
         </div>
       </div>
@@ -206,13 +215,15 @@
     <div class="container">
       <div class="features__main">
         <div class="features__left">
-          <div class="title">
+          <div class="title aboutus__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+            data-wow-delay=".2s">
             <p>Our Features </p>
             <h2>Behind The Story <br>
               Of Samar Agency</h2>
           </div>
           <div class="features__content">
-            <div class="features__item">
+            <div class="features__item wow animate__animated animate__fadeInRight" data-wow-duration="2s"
+              data-wow-delay=".4s">
               <i class="flaticon-idea"></i>
               <div class="features__text">
                 <h3>Idea & Analysis Gathering</h3>
@@ -220,7 +231,8 @@
                   nisl leo, sit amet consequat augue.</p>
               </div>
             </div>
-            <div class="features__item">
+            <div class="features__item wow animate__animated animate__fadeInRight" data-wow-duration="2s"
+              data-wow-delay=".6s">
               <i class="flaticon-idea"></i>
               <div class="features__text">
                 <h3>Design & Developing</h3>
@@ -228,7 +240,8 @@
                   nisl leo, sit amet consequat augue.</p>
               </div>
             </div>
-            <div class="features__item">
+            <div class="features__item wow animate__animated animate__fadeInRight" data-wow-duration="2s"
+              data-wow-delay=".8s">
               <i class="flaticon-idea"></i>
               <div class="features__text">
                 <h3>Testing & Lunching</h3>
@@ -253,11 +266,12 @@
         <h2>Our Latest Work</h2>
       </div>
       <div class="port__content">
-        <div class="port__item port__item1">
+        <div class="port__item port__item1 wow animate__animated animate__fadeInUp">
           <img src="./img/pic1_2.jpg" alt="">
           <div class="port__overlay">
             <div class="port__icon">
-              <a href="">
+              <a class="lightimg" data-thumb="./img/pic1_2.jpg" data-fancybox="gallery"
+              href="./img/pic1_2.jpg" data-caption="Design 1">
                 <i class="la la-plus"></i>
               </a>
             </div>
@@ -267,11 +281,11 @@
             </div>
           </div>
         </div>
-        <div class="port__item">
+        <div class="port__item wow animate__animated animate__fadeInUp">
           <img src="./img/pic2_1.jpg" alt="">
           <div class="port__overlay">
             <div class="port__icon">
-              <a href="">
+              <ag" data-fancybox="gallery" href="./img/pic2_1.jpg" data-caption="Design 1">
                 <i class="la la-plus"></i>
               </a>
             </div>
@@ -281,11 +295,11 @@
             </div>
           </div>
         </div>
-        <div class="port__item">
+        <div class="port__item wow animate__animated animate__fadeInUp" data-wow-delay="1s">
           <img src="./img/pic3_1.jpg" alt="">
           <div class="port__overlay">
             <div class="port__icon">
-              <a href="">
+              <ag" data-fancybox="gallery" href="./img/pic3_1.jpg" data-caption="Design 1">
                 <i class="la la-plus"></i>
               </a>
             </div>
@@ -295,11 +309,11 @@
             </div>
           </div>
         </div>
-        <div class="port__item">
+        <div class="port__item wow animate__animated animate__fadeInUp" data-wow-delay="1s">
           <img src="./img/pic4.jpg" alt="">
           <div class="port__overlay">
             <div class="port__icon">
-              <a href="">
+              <a data-fancybox="gallery" href="./img/pic4.jpg" data-caption="Design 1">
                 <i class="la la-plus"></i>
               </a>
             </div>
@@ -309,11 +323,11 @@
             </div>
           </div>
         </div>
-        <div class="port__item port__item5">
+        <div class="port__item port__item5 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
           <img src="./img/pic6.jpg" alt="">
           <div class="port__overlay">
             <div class="port__icon">
-              <a href="">
+              <a data-fancybox="gallery" href="./img/pic6.jpg" data-caption="Design 1">
                 <i class="la la-plus"></i>
               </a>
             </div>
@@ -323,11 +337,11 @@
             </div>
           </div>
         </div>
-        <div class="port__item port__item6">
+        <div class="port__item port__item6 wow animate__animated animate__fadeInUp" data-wow-delay="2s">
           <img src="./img/pic5.jpg" alt="">
           <div class="port__overlay">
             <div class="port__icon">
-              <a href="">
+              <a data-fancybox="gallery" href="./img/pic5.jpg" data-caption="Design 1">
                 <i class="la la-plus"></i>
               </a>
             </div>
@@ -408,7 +422,7 @@
   </section>
   <footer>
     <div class="container">
-      <div class="footer__form">
+      <div class="footer__form wow animate__animated animate__fadeInUp">
         <div class="footer__form__title">
           <h2>Subscribe To Our Newsletter</h2>
         </div>
@@ -419,7 +433,7 @@
           </form>
         </div>
       </div>
-      <div class="footer__infor">
+      <div class="footer__infor wow animate__animated animate__fadeIn" data-wow-delay="1s">
         <div class="footer__item">
           <a href="#">
             <img src="./img/logo-white.png" alt="logo">
@@ -538,7 +552,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container footer__bottom__main" >
+      <div class="container footer__bottom__main">
         <div class="footer__copyright">
           <p>Copyright &#169; 2021 <span>DexignZone</span>. All rights reserved.
           </p>
@@ -551,12 +565,16 @@
       </div>
     </div>
   </footer>
+  <!-- backToTop -->
+  <a href="#" class="backtotop cd-top text-replace js-cd-top">
+    <i class="fa fa-arrow-up"></i>
 
 
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- carousel -->
   <script src="./js/owl.carousel.min.js"></script>
   <script>
@@ -579,6 +597,34 @@
       }
     })
   </script>
+  <!-- WOWjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- countup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="./js/jquery.counterup.min.js"></script>
+  <script>
+    $('.counter').counterUp({
+      delay: 10,
+      time: 3000,
+    });
+  </script>
+  <!-- backToTop -->
+  <script src="./js/main_backtotop.js"></script>
+  <script src="./js/util.js"></script>
+  <!-- popup fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+  // Your custom optionss
+});
+  </script>
+
+
 
 </body>
 

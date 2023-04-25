@@ -332,9 +332,10 @@ padding: 10px 5px 10px 0;
     width: 50%;
 }
 .features__right .features__banner img{
-max-width: 100%;
+    max-width: 100%;
     animation: move2 5s infinite;
     padding-top: 115px;
+
 }
 .features__right .features__banner{
 margin-right: -80px;
@@ -571,9 +572,13 @@ footer::before{
     font-size: 20px;
     border-radius: 0 0.5rem 0.5rem 0;
 }
-.footer__form__email button:hover i{
-    
+.footer__form__email button:hover{
+    background-position: right center;
 }
+.footer__form__email button:hover i{
+    animation: toLeftFromRight 0.5s forwards;
+}
+
 .footer__infor{
     display: flex;
     position: relative;
@@ -671,6 +676,28 @@ footer::before{
 .footer__social a:hover{
     background: #f55f8d;
 }
+/* backToTop */
+.backtotop{
+    width: 50px;
+    height: 50px;
+    background: #f55f8d;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: block;
+    color: #fff;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
+}
+.cd-top--is-visible { 
+    /* // back-to-top button visible */
+    visibility: visible;
+    opacity: 1;}
 @keyframes uptoDown{
     49% {
         transform: translateY(100%);
@@ -684,4 +711,29 @@ footer::before{
         transform: translateY(-100%);
         opacity: 1;
     }
+}
+@keyframes move2{
+    0%{
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+    50%{
+        transform: rotate(-1deg) translate(-2px,-2px);
+    }
+    100%{
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+}
+@keyframes toLeftFromRight{
+    49% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    } 
 }
